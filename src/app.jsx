@@ -37,7 +37,7 @@ export const App = () => {
             <li className={getStepItemClass(item)}
                 key={item.id}>
                 <button className={styles["steps-item-button"]} onClick={() => {
-                    setSteps(setActiveIndex(index))
+                    setActiveIndex(index)
                 }}>
                     {(index + 1)}
                 </button>

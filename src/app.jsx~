@@ -37,7 +37,7 @@ export const App = () => {
             <li className={getStepItemClass(item)}
                 key={item.id}>
                 <button className={styles["steps-item-button"]} onClick={() => {
-                    setSteps(setActiveIndex(index))
+                    setActiveIndex(activeIndex)
                 }}>
                     {(index + 1)}
                 </button>
@@ -46,7 +46,8 @@ export const App = () => {
         )
     })
 
-    return (<div className={styles.container}>
+    return (
+        <div className={styles.container}>
             <div className={styles.card}>
                 <h1>Инструкция по готовке пельменей</h1>
                 <div className={styles.steps}>
